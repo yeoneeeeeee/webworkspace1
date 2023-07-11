@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 응답시켜주는 내용 저장하는 파일 -->
+
+<books>
+	<book>
+		<subject>소설</subject>
+		<title>해질무렵</title>
+		<autor>황석영</autor>
+	</book>
+	<book>
+		<subject>소설</subject>
+		<title>소나기</title>
+		<autor>황순원</autor>
+	</book>
+	<book>
+		<subject>소설</subject>
+		<title>안나카레니나</title>
+		<autor>톨스토이</autor>
+	</book>
+	<book>
+		<subject>프로그래밍</subject>
+		<title>자바</title>
+		<autor>민경민</autor>
+	</book>
+	<book>
+		<subject>프로그래밍</subject>
+		<title><![CDATA[jsp&servlet]]></title>
+		<autor>홍길동</autor>
+	</book>
+	<book>
+		<subject>만화</subject>
+		<title>귀멸의칼날</title>
+		<autor>루피</autor>
+	</book>
+
+</books>

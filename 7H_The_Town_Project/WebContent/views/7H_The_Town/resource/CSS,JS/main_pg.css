@@ -1,0 +1,201 @@
+
+
+.outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    margin : 0;
+    margin-top: 100px;
+    height: 100%;
+}
+.main_pg_wrap{
+    border: 1px solid black;
+    width: 100%;
+    height: 1200px;
+}
+
+
+/* 섹션 1 */
+.section1{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section1>h4{
+    margin-left: 300px;
+    margin-top: 450px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: bolder;
+    font-size: 60px;
+    text-shadow: 3px 3px 3px rgba(120, 120, 120, 0.95);
+}
+.section1>p{
+    margin-left: 420px;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bolder;
+    font-size: 22px;
+    text-shadow: 2px 2px 3px black;
+}
+
+
+/* 섹션 2 */
+
+.section2{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section2>h4{
+    margin-left: 1250px;
+    margin-top: 450px;
+    color: white;
+    font-weight: bolder;
+    font-size: 50px;
+    text-shadow: 2px 2px 3px black;
+}
+.section2>p{
+    margin-left: 1340px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: bolder;
+    font-size: 18px;
+    text-shadow: 2px 2px 3px black;
+}
+
+
+
+
+/* 섹션 3 */
+.main_pg_wrap.section3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:1500px;
+}
+.section3_wrap{
+    /* background-image: url(views/7H_The_Town/resource/img/유기견기사1.png);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    width: 600px;
+    height: 400px;
+    margin-left: 15%;
+    margin-top: 100px;
+}
+.section3_wrap2{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    margin-left: 55%;
+    margin-top: -50px;
+}
+.section3_wrap3{
+    width: 1200px;
+    height: 300px;
+    margin-left: 20%;
+    margin-top: -50px;
+    display: flex; 
+}
+.section3_content1{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 600px;
+    
+}
+.section3_content2{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 450px;
+    height: 300px;
+    margin-left: 150px;
+    margin-top:300px;
+}
+
+
+
+/* 섹션 4 */
+
+.section4{
+    background:rgba(222, 215, 204, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: none;
+    height: 1200px;
+}
+.petListBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 800px;
+    font-family: 'S-CoreDream-3Light';
+}
+.petListBox>div>h4{
+	margin-top: 80px;
+	margin-bottom:-80px;
+	font-weight: bold;
+	font-size: 40px;
+}
+.petBoxOne{
+    width: 300px;
+    height: 300px;
+    border-radius: 3px;
+    margin: 180px 50px 0px 50px;
+    cursor: pointer;
+}
+.petBoxOne div{
+    background: none;
+    border: none;
+}
+.petInformation{
+    margin-top: -50px;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.petBoxOne:hover>.petInformation{
+    opacity: 1;
+}
+.petInformation p{
+    color: black;
+    background: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+.main_pg_wrap.section5{
+    margin: 0px;
+    background-size: cover;
+    height:1200px;
+}
+.textAlignCenter{
+    text-align: cover;
+}
+
+
+/* section 5 */
+.section5{
+	text-align : center;
+}
+.section5 h3{
+	color: rgba(210, 210, 210, 0.9);
+    font-weight: bolder;
+    font-size: 50px;
+    text-shadow: 3px 3px 3px rgba(120, 120, 120, 0.95);
+    margin:50px;
+    margin-top:450px;
+}
+.section5 h5{
+	color: rgba(180, 180, 180, 0.9);
+    font-weight: bolder;
+    font-size: 28px;
+    text-shadow: 3px 3px 3px rgba(120, 120, 120, 0.95);
+    margin:30px;
+    margin-bottom:100px;
+}
+.section5 a{
+	color: rgba(180, 180, 180, 0.9);
+    font-weight: bolder;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px rgba(120, 120, 120, 0.95);
+    margin:30px;
+    padding:10px;
+    background:gray;
+    border-radius:5px;
+}
+

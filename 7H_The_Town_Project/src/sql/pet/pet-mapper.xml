@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+	<entry key="selectAllPet">
+		SELECT 
+			PET_NO, 
+			PET_NAME,
+			PET_KIND,
+			PET_AGE,
+			PET_GENDER,
+			PET_PRICE,
+			PET_RESCUE,
+			STATUS
+		FROM PET P 
+		WHERE P.STATUS = 'Y'
+		ORDER BY CREATE_DATE DESC
+	</entry>
+	
+	<entry key="selectPet">
+		SELECT *
+		  FROM PET
+		 WHERE PET_NO = ?
+		   AND STATUS = 'Y'
+	</entry>
+
+	<entry key="insertPet">
+		INSERT INTO PET(
+							PET_NO,
+							PET_NAME,
+							PET_KIND,
+							PET_AGE,
+							PET_GENDER,
+							PET_PRICE,
+							PET_RESCUE,
+							STATUS
+							)
+		VALUES (
+				SEQ_UNO.NEXTVAL,
+				?,
+				?,
+				?,
+				?,
+				?,
+				?,
+				?,
+				?
+				)
+	</entry>
+	
+	<entry key="updatePet">
+		 UPDATE PET
+			SET PET_NO = ? ,
+				PET_NAME = ? ,
+				PET_KIND = ? ,
+				PET_AGE = ? ,
+				PET_GENDER = ? ,
+				PET_PRICE = ? ,
+				PET_RESCUE = ? ,
+				STATUS = ? ,
+			    MODIFY_DATE = SYSDATE
+			WHERE PET_NO = ?
+	</entry>
+	
+	<entry key="deletePet">
+		UPDATE PET
+		   SET STATUS = 'N' ,
+		       MODIFY_DATE = SYSDATE
+		 WHERE PET_NO = ? 
+	</entry>
+	
+</properties>

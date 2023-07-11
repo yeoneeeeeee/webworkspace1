@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="selectDelivery">
+		SELECT *
+		  FROM DELIVERY
+		 WHERE DEL_NO = ?
+		   AND STATUS = 'Y'
+	</entry>
+	
+	<entry key="insertDelivery">
+		INSERT INTO DELIVERY(
+								DEL_NO,
+								DEL_STATUS,
+								CUR_SPOT,
+								PET_NO,
+								USER_NO
+								)
+		VALUES (
+				SEQ_UNO.NEXTVAL,
+				?,
+				?,
+				?,
+				?,
+				?
+				)
+	</entry>
+
+	<entry key="updateDelivery">
+	 UPDATE DELIVERY
+		SET DEL_NO,
+			DEL_STATUS,
+			CUR_SPOT,
+			USER_NO,
+		    MODIFY_DATE = SYSDATE
+		WHERE DEL_NO = ?
+	</entry>
+	
+	<entry key="deleteDelivery">
+		UPDATE DELIVERY
+		   SET STATUS = 'N' ,
+		       MODIFY_DATE = SYSDATE
+		 WHERE DEL_NO = ? 
+	</entry>
+	
+</properties>

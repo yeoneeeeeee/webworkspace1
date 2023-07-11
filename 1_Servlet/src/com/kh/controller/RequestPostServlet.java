@@ -43,7 +43,9 @@ public class RequestPostServlet extends HttpServlet {
 		
 		// 요청시 전달한 값들은 request의 parameter에 담겨있다.
 		// 다만, POST방식 요청의 경우 값을 뽑기 전에 UTF-8방식으로 인코딩 설정을 해야한다.
-		// 		POST방식의 기본 인코딩 설정은 ISO-8859-1이기 떄문.
+		// 		POST방식의 기본 인코딩 설정은 ISO-8859-1이기 때문.
+		
+//		무조건 첫줄에 적어야 파일이 깨지지 않음 ★
 		request.setCharacterEncoding("UTF-8");
 		
 		String name = request.getParameter("name"); // "김소연", ""(텍스트 상자가 빈경우 빈 문장열이 넘어간다)☆
